@@ -13,12 +13,15 @@
 
 <body>
 
-    <audio id="audios" preload="auto">
-  <source src="5.mp3" type="audio/mpeg">
-  Tarayıcınız bu sesi desteklemiyor.
-</audio>
+    <!-- Müzik dosyası -->
+  <audio id="audios" preload="auto">
+    <source src="5.mp3" type="audio/mpeg">
+    Tarayıcınız bu sesi desteklemiyor.
+  </audio>
 
-<button onclick="document.getElementById('audios').play()">Müziği Başlat 🎵</button>
+  <!-- Başlat ve Durdur Butonları -->
+  <button onclick="document.getElementById('audios').play()">Müziği başlatır mısın <3 </button>
+  <button onclick="document.getElementById('audios').pause()">Durdur ⏸️</button>
 
 
     <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
