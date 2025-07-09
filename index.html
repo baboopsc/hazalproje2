@@ -13,10 +13,13 @@
 
 <body>
 
-    <audio autoplay="autoplay" loop="loop" id="audios" preload="auto">
-        <source src="5.mp3" />
-    </audio>
-    <button onclick="document.getElementById('audios').play()">Müziği Başlat 🎵</button>
+    <audio id="audios" preload="auto">
+  <source src="5.mp3" type="audio/mpeg">
+  Tarayıcınız bu sesi desteklemiyor.
+</audio>
+
+<button onclick="document.getElementById('audios').play()">Müziği Başlat 🎵</button>
+
 
     <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
 
