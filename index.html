@@ -13,10 +13,17 @@
 
 <body>
 
-  <audio id="audios" autoplay loop>
-  <source src="6.mp3" type="audio/mpeg" />
+ <!-- Müzik oynatıcısı -->
+<audio id="audios" preload="auto" loop>
+  <source src="5.mp3" type="audio/mpeg">
+  Tarayıcınız audio etiketini desteklemiyor.
 </audio>
 
+<!-- Butonlar -->
+<div style="position: fixed; bottom: 30px; left: 30px; z-index: 9999;">
+  <button onclick="document.getElementById('audios').play()">Müziği Başlat 🎵</button>
+  <button onclick="document.getElementById('audios').pause()">Müziği Durdur 🔇</button>
+</div>
 
 
     <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
